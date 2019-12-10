@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.2em;
+}
+
+.light-overlay {
+  background: rgba(209, 209, 209, 0.2);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.outer-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #d6d6d6;
+}
+.outer-container .nav-bar {
+  float: right;
+  margin-right: 5%;
+  margin-top: 9.5%;
+  line-height: 1.5rem;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+.outer-container .nav-bar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.outer-container .main-text {
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 5;
+  top: 28%;
+  font-weight: 700;
+}
+.outer-container .main-text h1 {
+  font-size: 12vw;
+  margin-left: 15%;
+  margin-bottom: 0;
+}
+.outer-container .main-text .btm-text {
+  font-size: 12vw;
+  margin-left: 20%;
+}
+
+.inner-container {
+  z-index: 1;
+  position: absolute;
+  background-color: #fc4b548c;
+  height: 100vh;
+  width: 1000px;
+  margin: 10% 16% 0 16%;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+.inner-container .civil-text {
+  float: right;
+  padding: 1em;
+}
+.inner-container .civil-text p {
+  border-bottom: #000 solid 1.5px;
+}
+.inner-container .vert-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  padding: 1em;
+}
+
+/*# sourceMappingURL=/src.e31bb0bc.css.map */
