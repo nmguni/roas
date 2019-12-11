@@ -20,17 +20,30 @@ body {
   background-color: $base;
   // color: rgba(0, 0, 0, 0.7);
   .nav-bar {
-    float: right;
-    margin-right: 5%;
+    position: absolute;
+    margin-left: 85%;
+    display: flex;
     margin-top: 9.5%;
     line-height: 1.5rem;
     font-weight: 600;
     font-family: "Roboto", sans-serif;
-
+    z-index: 10;
     ul {
+      text-transform: uppercase;
+      line-height: 1.5rem;
       padding: 0;
       margin: 0;
       list-style: none;
+      text-decoration: none;
+      a {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.678);
+        &:hover {
+          color: $basePink;
+          font-size: 1.2rem;
+          border-bottom: 1px $basePink solid;
+        }
+      }
     }
   }
   .main-text {
@@ -39,6 +52,7 @@ body {
     z-index: 5;
     top: 28%;
     font-weight: 700;
+
     h1 {
       font-size: 12vw;
       margin-left: 15%;
@@ -55,7 +69,7 @@ body {
   z-index: 1;
   position: absolute;
   background-color: $basePink;
-  height: 100vh;
+  height: 600px;
   width: 1000px;
   // width: ;
   margin: 10% 16% 0 16%;
@@ -65,13 +79,21 @@ body {
   .civil-text {
     float: right;
     padding: 1em;
-    p {
-      border-bottom: #000 solid 1.5px;
-    }
+    font-size: 0.8rem;
+    // color: rgba(0, 0, 0, 0.678);
   }
   .vert-text {
+    font-size: 0.8rem;
+    // color: rgba(0, 0, 0, 0.678);
     writing-mode: vertical-rl;
     text-orientation: mixed;
     padding: 1em;
   }
+}
+
+.image {
+  position: absolute;
+  filter: brightness(50%);
+  bottom: 0;
+  margin-left: 20%;
 }
