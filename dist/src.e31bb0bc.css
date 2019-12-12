@@ -60,6 +60,7 @@ body {
 .outer-container .main-text .btm-text {
   font-size: 12vw;
   margin-left: 20%;
+  writing-mode: vertical-rl;
 }
 
 .inner-container {
@@ -87,8 +88,8 @@ body {
 .image {
   position: absolute;
   filter: brightness(50%);
-  bottom: 0;
-  margin-left: 20%;
+  bottom: 15%;
+  margin-left: 15%;
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
