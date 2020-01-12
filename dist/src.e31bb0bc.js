@@ -189,10 +189,24 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./..\\images\\rosa-parks.jpg":[["rosa-parks.212af038.jpg","images/rosa-parks.jpg"],"images/rosa-parks.jpg"],"./..\\images\\Rosaparks.jpg":[["Rosaparks.c336f0e3.jpg","images/Rosaparks.jpg"],"images/Rosaparks.jpg"],"./..\\images\\roas.jpg":[["roas.8e7601c3.jpg","images/roas.jpg"],"images/roas.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./styles/main.scss");
+
+var cards = document.querySelectorAll('.card');
+
+function transition() {
+  if (this.classList.contains('active')) {
+    this.classList.remove('active');
+  } else {
+    this.classList.add('active');
+  }
+}
+
+cards.forEach(function (card) {
+  return card.addEventListener('click', transition);
+});
 },{"./styles/main.scss":"styles/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -221,7 +235,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53521" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62348" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
