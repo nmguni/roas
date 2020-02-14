@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\rosa-parks.jpg":[["rosa-parks.212af038.jpg","images/rosa-parks.jpg"],"images/rosa-parks.jpg"],"./..\\images\\Rosaparks.jpg":[["Rosaparks.c336f0e3.jpg","images/Rosaparks.jpg"],"images/Rosaparks.jpg"],"./..\\images\\roas.jpg":[["roas.8e7601c3.jpg","images/roas.jpg"],"images/roas.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./styles/main.scss");
@@ -235,7 +235,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62348" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51280" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
