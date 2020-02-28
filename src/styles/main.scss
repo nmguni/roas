@@ -129,8 +129,8 @@ body {
       flex-direction: column;
       align-items: center;
       .imgBorder {
-        border: solid #fff 1px;
-        padding: 2rem;
+        border: solid #fff 2px;
+        padding: 0.5rem;
       }
     }
     .topCard__text {
@@ -148,18 +148,26 @@ body {
 
   // bottom card
   .sectionOne__btmCard {
-    margin: 1.5rem 11% 0 11%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    // padding: 1rem;
+    margin: 0 11% 0 11%;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-around;
+    display: grid;
+    grid-gap: 0.3rem;
+    grid-template-columns: repeat(6, 1fr);
+    text-transform: uppercase;
+
     .year {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       font-weight: 900;
+      color: $basePink;
     }
     p {
-      font-size: 1.2rem;
-      margin: 0.2rem;
+      font-size: 1rem;
       letter-spacing: 0.1rem;
+      line-height: 1.8rem;
+      margin: 0.5rem;
     }
   }
 }
@@ -172,10 +180,11 @@ body {
   .sectionTwo__topCard {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-
     background-color: rgb(44, 44, 44);
-
     margin-right: 5%;
+    blockquote {
+      font-style: italic;
+    }
   }
 
   .topCard__text {
@@ -197,8 +206,8 @@ body {
     flex-direction: column;
     align-items: center;
     .img {
-      padding: 2rem;
-      border: solid black 1px;
+      padding: 0.5rem;
+      border: solid #fff 2px;
     }
   }
 
@@ -209,19 +218,22 @@ body {
     grid-gap: 1.5rem;
     text-align: center;
     .btm__img {
-      background-color: #ccc;
       margin-top: 2rem;
-      height: 65%;
+      img {
+        height: 200px;
+      }
     }
   }
 }
 
 .sectionThree {
-  height: 100vh;
+  height: 100%;
   display: grid;
   grid-template-rows: 2fr 2fr;
   grid-gap: 2rem;
-  margin: 0 10% 0 10%;
+  margin: 3% 10% 2% 10%;
+  background-color: $basePink;
+  padding: 1rem;
 
   .sectionThree__topCard {
     display: grid;
@@ -233,7 +245,7 @@ body {
       align-items: center;
       &.topRightText {
         line-height: 3rem;
-        margin: 2rem 15% 0 15%;
+        margin: 1rem 15% 0 15%;
         font-size: 2rem;
       }
       &.topMidText {
@@ -247,9 +259,12 @@ body {
         }
       }
       .img {
-        height: 300px;
+        height: 100%;
         width: 100%;
-        background-color: rgb(90, 90, 90);
+        img {
+          padding: 0.5rem;
+          border: 2px solid #fff;
+        }
       }
     }
   }
@@ -274,9 +289,12 @@ body {
         }
       }
       .img {
-        height: 300px;
+        height: 100%;
         width: 100%;
-        background-color: rgb(90, 90, 90);
+        img {
+          border: 2px solid #fff;
+          padding: 0.5rem;
+        }
       }
     }
   }
