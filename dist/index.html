@@ -15,7 +15,7 @@
   <title>Document</title>
 <link rel="stylesheet" href="/src.e31bb0bc.css"></head>
 
-<body>
+<body style="overflow: hidden;">
   <div class="light-overlay"></div>
   <section class="contain">
     <div class="outer-container">
@@ -41,17 +41,17 @@
     
   </section>
 
-  <!-- section one-------------------- -->
+  <!-- section one-------------------- 
  <div class="sectionOne">
    <div class="sectionOne__topCard">
     <div style=" font-size: 8rem;" class="topCard__img">
-    <span class="imgBorder"> <img width="100%" height="100%" src="/Rosa-Parks-bus.24a84860.jpg" alt=""></span>
+    <span class="imgBorder" > <img width="100%" height="100%" src="./images/Rosa-Parks-bus.jpg" alt=""></span>
     </div>
     <div class="topCard__text">“People always say that I didn't give up my seat because I was tired, but that isn't true. I was not tired physically ... No, the only tired I was, was tired of giving in."</div>
   </div>
    <div class="sectionOne__btmCard">
 
-    <div class="card"> <p class="year"> <strong> 1913</strong></p> <p>Rosa Parks was born in  Alabama </p> </div>
+    <div class="card"> <p class="year" > <strong> 1913</strong></p> <p>Rosa Parks was born in  Alabama </p> </div>
     <div class="card"> <p class="year"> <strong> 1932</strong></p> <p>Rosa Parks  marries Raymond Parks</p> </div>
     <div class="card"> <p class="year"> <strong> 1943</strong></p> <p>Rosa Parks  first incident on   segregated bus</p> </div>
     <div class="card"> <p class="year"> <strong> 1943</strong></p> <p>Joins NAACP in Civil Rights Movement</p> </div>
@@ -65,37 +65,37 @@
     <div class="card"> <p class="year"> <strong> 2005</strong></p> <p> House approves body to lie  in US Capitol</p> </div>
    </div>
  </div>
- <!-- sections two -->
+ <!-- sections two 
  <div class="sectionTwo">
    <div class="sectionTwo__topCard">
-    <div class="topCard__text">
-      <blockquote class="text">“Our freedom is threatened every time one of our young people is killed by another child… every time a person gets stopped and beaten by the police because of the color of their skin.”</blockquote>
+    <div  class="topCard__text">
+      <blockquote class="text" >“Our freedom is threatened every time one of our young people is killed by another child… every time a person gets stopped and beaten by the police because of the color of their skin.”</blockquote>
     </div>
       <div class="topCard__img">
-        <span class="img">
-          <img src="/Rosa_Parks_being_fingerprinted_by_Deputy_Sheriff_DH_Lackey_Montgomery_Alabama_February_22_1956.43cd9846.jpg" alt="">
+        <span class="img" >
+          <img src="./images/Rosa_Parks_being_fingerprinted_by_Deputy_Sheriff_DH_Lackey_Montgomery_Alabama_February_22_1956.jpg" alt="">
         </span>
       </div>
    </div>
 
    <div class="sectionTwo__btmCard">
 
-    <div class="cards"> <div class="btm__img"><img src="/rosa-parks-my-story.3e8180c4.jpg" alt=""></div> 
+    <div class="cards"> <div class="btm__img" ><img src="./images/rosa-parks-my-story.jpg" alt=""></div> 
     <p>Rosa Parks:My Story</p>
     </div>
-    <div class="cards"> <div class="btm__img"><img src="/i am rosa parks.0d7c7cc4.jpg" alt=""></div> 
+    <div class="cards"> <div class="btm__img" ><img src="./images/i am rosa parks.jpg" alt=""></div> 
     <p>I Am Rosa Parks</p>
     </div>
-    <div class="cards"> <div class="btm__img"><img src="/Seven Women.f61e9d1c.jpg" alt=""></div> 
+    <div class="cards"> <div class="btm__img" ><img src="./images/Seven Women.jpg" alt=""></div> 
     <p>Seven Women: And the Secret of Their Greatness</p>
     </div>
-    <div class="cards"> <div class="btm__img"><img src="/Little Leaders.2c931a75.jpg" alt=""></div> 
+    <div class="cards"> <div class="btm__img" ><img src="./images/Little Leaders.jpg" alt=""></div> 
     <p>Little Leaders: Bold Women in Black History.</p>
     </div>
-    <div class="cards"> <div class="btm__img"><img src="/bus ride.ce8cda65.jpg" alt=""></div> 
+    <div class="cards"> <div class="btm__img" ><img src="./images/bus ride.jpg" alt=""></div> 
     <p>The Bus Ride</p>
     </div>
-    <div class="cards"> <div class="btm__img"><img src="/reflections.a02f52e3.jpg" alt=""></div> 
+    <div class="cards"> <div class="btm__img" ><img src="./images/reflections.jpg" alt=""></div> 
     <p>Reflections by Rosa Parks</p>
     </div>
   </div>
@@ -107,13 +107,13 @@
 <div class="topCard__cards topRightText"> “Have you ever been hurt and the place tries to heal a bit, and you just pull the scar off of it over and over again.” </div>
 <div class="topCard__cards topMidText"> <p>“Memories of our lives, of our works and our deeds will continue in others.”</p></div>
 <div class="topCard__cards"> <div class="img"> 
-  <img height="400px" src="/roas.8e7601c3.jpg" alt="">
+  <img height="400px" src="./images/roas.jpg" alt="">
 </div> </div>
    </div>
    <div class="sectionThree__bottomCard">
 <div class="bottomCard__cards"> Rosa Parks</div>
-<div class="bottomCard__cards"> <div class="img">
-  <img src="/rosa-parks.212af038.jpg" alt="">
+<div class="bottomCard__cards" > <div class="img">
+  <img src="./images/rosa-parks.jpg" alt="">
 </div> </div>
 <div class="bottomCard__cards btmRightText"> <p>“Whatever my individual desires were to be free, I was not alone. There were many others who felt the same way.”</p></div>
    </div>
@@ -125,6 +125,36 @@
 
   <!-- JS -->
   <script src="/src.e31bb0bc.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+  <script>gsap.from(".vert-text", {
+  opacity: 0,
+  duration: 2.5,
+  ease: "slow(0.9, 0.7, false)",
+  y: -500
+});
+gsap.from(".image", {
+  opacity: 0,
+  // duratoin: 2,
+  y: 250,
+  ease: "slow(0.9, 0.7, false)",
+  delay: 3.5
+});
+gsap.from(".nav-bar", {
+  opacity: 0,
+  // duratoin: 3,
+  x: 650,
+  ease: "slow(0.9, 0.7, false)",
+  delay: 3
+});
+gsap.from(".light-overlay", {
+  opacity: 0,
+  // duratoin: 3,
+  x: -650,
+  ease: "SlowMo.easeIn",
+  delay: 4
+});</script>
 </body>
 
 </html>
