@@ -193,20 +193,6 @@ module.hot.accept(reloadCSS);
 "use strict";
 
 require("./styles/main.scss");
-
-var cards = document.querySelectorAll('.card');
-
-function transition() {
-  if (this.classList.contains('active')) {
-    this.classList.remove('active');
-  } else {
-    this.classList.add('active');
-  }
-}
-
-cards.forEach(function (card) {
-  return card.addEventListener('click', transition);
-});
 },{"./styles/main.scss":"styles/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -235,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62608" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56354" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
